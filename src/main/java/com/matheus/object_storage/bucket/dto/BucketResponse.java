@@ -1,5 +1,6 @@
 package com.matheus.object_storage.bucket.dto;
 
-public class BucketResponse {
+import java.time.Instant;
+import java.util.UUID;
 
-}
+public record BucketResponse(UUID id, String name, String ownerId, Instant createdAt) {}

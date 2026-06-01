@@ -1,5 +1,3 @@
 package com.matheus.object_storage.object.dto;
 
-public class ObjectRequest {
-
-}
+public record ObjectRequest() {}

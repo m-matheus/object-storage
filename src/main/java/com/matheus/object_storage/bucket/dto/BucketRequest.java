@@ -1,5 +1,3 @@
 package com.matheus.object_storage.bucket.dto;
 
-public class BucketRequest {
-
-}
+public record BucketRequest(String name) {}
