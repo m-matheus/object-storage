@@ -1,0 +1,15 @@
+meta {
+  name: delete-bucket
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/buckets/c89529c4-84be-43a6-9531-f4b23ee82f50
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

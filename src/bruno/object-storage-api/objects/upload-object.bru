@@ -1,0 +1,20 @@
+meta {
+  name: upload-object
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/buckets/97182c9b-c6a3-4cf7-a1bb-04f3e233cd89/objects
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  key: test/hello.txt
+  file: @file(C:\Users\I752817\Documents\test.txt)
+}
+
+settings {
+  encodeUrl: true
+}
